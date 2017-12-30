@@ -1,4 +1,10 @@
-// KLASA KANBAN CARD
+var baseUrl = 'https://kodilla.com/pl/bootcamp-api';
+var myHeaders = {
+  'X-Client-Id': 2477,
+  'X-Auth-Token': "36a25b813e544154e0c3e5e0402b984c"
+};
+
+
 function Card(id, name) {
 	var self = this;
 
@@ -24,6 +30,7 @@ function Card(id, name) {
 Card.prototype = {
 	removeCard: function() {
     var self = this;
+
     $.ajax({
       url: baseUrl + '/card/' + self.id,
       method: 'DELETE',
