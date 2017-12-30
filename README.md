@@ -1,1 +1,1 @@
-# kodilla12-7
+zadanie 12.7
