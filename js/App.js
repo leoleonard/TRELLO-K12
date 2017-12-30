@@ -4,6 +4,9 @@ var myHeaders = {
   'X-Auth-Token': "36a25b813e544154e0c3e5e0402b984c"
 };
 
+$.ajaxSetup({
+headers: myHeaders
+});
 
 $.ajax({
     url: baseUrl + '/board',
